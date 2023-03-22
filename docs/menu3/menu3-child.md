@@ -6,7 +6,5 @@ nav_order: 1
 ---
 
 #Child
-{: .no_toc }
+{:toc }
 
-## Table of contetns
-{: .no_toc .text-delta }
