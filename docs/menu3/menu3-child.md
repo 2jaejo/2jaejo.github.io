@@ -5,8 +5,8 @@ parent: menu3
 nav_order: 1
 ---
 
-#menu3-child
-{: .no_toc}
+#Child
+{: .no_toc }
 
-menu3 child Test
-{: .fs-6 .fw-300 }
+## Table of contetns
+{: .no_toc .text-delta }

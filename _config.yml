@@ -15,7 +15,7 @@ remote_theme: just-the-docs/just-the-docs
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Neuronworks flutter docs
+title: Neuronworks docs
 description: Neuronworks flutter for documentation
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://2jaejo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -102,7 +102,7 @@ heading_anchors: true
 # Aux links for the upper right navigation
 aux_links:
   "Just the Docs on GitHub":
-    - "//https://2jaejo.github.io"
+    - "//2jaejo.github.io"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
