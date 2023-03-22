@@ -102,7 +102,7 @@ heading_anchors: false
 # Aux links for the upper right navigation
 aux_links:
   "Just the Docs on GitHub":
-    - "//2jaejo.github.io"
+    - "//github.com/2jaejo/2jaejo.github.io"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
