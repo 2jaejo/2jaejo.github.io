@@ -97,7 +97,7 @@ mermaid:
   # path: "/assets/js/mermaid.min.js"
 
 # Enable or disable heading anchors
-heading_anchors: true
+heading_anchors: false
 
 # Aux links for the upper right navigation
 aux_links:
@@ -112,10 +112,10 @@ aux_links_new_tab: true
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
-nav_external_links:
-  - title: Just the Docs on GitHub
-    url: https://github.com/just-the-docs/just-the-docs
-    hide_icon: true
+# nav_external_links:
+#   - title: Just the Docs on GitHub
+#     url: https://github.com/just-the-docs/just-the-docs
+#     hide_icon: true
 
 
 # Footer content

@@ -5,7 +5,7 @@ nav_order: 2
 ---
 
 #menu2
-{:toc}
+{: .no_toc}
 
 menu2 Test
 {: .fs-6 .fw-300 }
