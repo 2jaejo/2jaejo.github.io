@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Menu3-child1
-parent: menu3
+parent: Menu3
 nav_order: 1
 ---
 
