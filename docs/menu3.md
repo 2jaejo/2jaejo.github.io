@@ -3,7 +3,7 @@ layout: default
 title: Menu3
 nav_order: 3
 has_children: true
-permaling: /docs/menu3
+permalink: /docs/menu3
 ---
 
 #menu3
