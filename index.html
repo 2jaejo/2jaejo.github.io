@@ -1,135 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포트폴리오</title>
+    <style>
+      
+        body {
+            margin: 0;
+            background-color: #EEE9DA;
+            display: flex;
+            height: 100vh; 
+        }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        .menu {
+            width: 400px;
+            background-color: #6096B4;
+            padding: 0px;
+            box-sizing: border-box;
+            overflow-y: auto; 
+            height: 100vh; 
+        
+        }
 
+        .menu ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu li p{
+            padding: 10px;
+            color: #EEE9DA;
+            text-align: center;
+        }
+
+        .menu li p:hover {
+            background-color: #EEE9DA;
+            color: #6096B4;
+            cursor: pointer;
+        }
+
+        #home {
+            padding: 20%;
+            cursor: pointer;
+        }
+
+        #logo_image {
+            width: 100%;
+            height: auto;
+            display:block;
+            border-radius: 50%;
+        }
+
+        #logo_text {
+            text-align: center;
+            color: #EEE9DA;
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .div_exp {
+            padding: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+
+        h2, h3 {
+            color: #6096B4;
+        }
+
+        h5 {
+            color : #777;
+        }
+
+        p {
+            font-size: large;
+            color: #777;
+            line-height: 1.6;
+        }
+
+        span {
+            color: #777;
+        }
+
+        a {
+            color: #6096B4;
+        }
+        a:visited {
+            color: #6096B4; 
+        }
+        a:hover {
+            color: darkblue; 
+        }
+
+        section {
+            min-height: 600px;
+            padding-top: 6rem;
+            margin: 0 auto;
+            width: 45rem;
+        }
+
+
+    </style>
 </head>
-
 <body>
 
-    <!-- Header -->
-    <section id="header">
-        <header>
-            <span class="image avatar"><img src="images/park.jpg" alt=""></span>
-            <h1 id="logo"><a href="#" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">이재조</a></h1>
-            
-        </header>
-        <nav id="nav">
-            <ul>
-                <li><a href="#one" class="scrolly" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Introduction</a></li>
-                <li><a href="#two" class="scrolly active" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">SkillSet</a></li>
-                <li><a href="#three" class="scrolly" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Portfolio</a></li>
-                <li><a href="#four" class="scrolly" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Contact</a></li>
-            </ul>
-        </nav>
-        
-    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            // 클릭한 메뉴 항목과 연결된 섹션으로 스크롤
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
+    <!-- 좌측 메뉴 리스트 -->
+    <div class="menu">
+        <div id="home" onclick="scrollToSection('section1')">
+            <img id="logo_image" src="image/lee.jpg" alt="photo" />
+            <h1 id="logo_text">LEE JAE JO</h1>
+        </div>
 
-        <!-- Main -->
-            <div id="main">
-
-                <!-- One -->
-                    <section id="one" class="">
-                        
-                        <div class="container">
-                            <header class="major">
-                                <h2>Introduction</h2>
-                                <p>안녕하세요.&nbsp; <br>
-                                백엔드 개발자<br> 이재조입니다.</p>
-                            </header>
-                            <p>
-                                "공부를 하고 나서 거기서 그치지 않고 관련된 기술을 적용해 개발을 해보거나 필요한 프로그램을 개발 하는 것을 좋아합니다.<br>
-                                백엔드 기술에 관심이 있으며 커뮤니케이션 및 코드 리뷰 하는 것을 좋아합니다.<br>
-                                현재 백엔드 개발자로 구직중입니다.<br>
-                            </p>
-                            <hr>
-                            <header class="major">
-                                
-                            </header>
-                        </div>
-                    </section>
-
-                <!-- Two -->
-                    <section id="two" class="">
-                        <div class="container">
-                            <h3>SkillSet</h3>
-                            <p>사용하는 언어 및 프레임워크</p>
-                            <ul class="feature-icons">
-                                <li class="icon solid fa-code">PHP</li>
-                                <li class="icon solid fa-code">Python</li>
-                                <li class="icon solid fa-code">Java</li>
-                                <li class="icon solid fa-code">Kotlin</li>
-                                <li class="icon solid fa-code">Swift</li>
-                                <li class="icon solid fa-code">Html</li>
-                                <li class="icon solid fa-code">Css</li>
-                                <li class="icon solid fa-code">Javascript</li>
-                                <li class="icon solid fa-code">Mysql</li>
-                                <li class="icon solid fa-code">Oracle</li>
-                                <li class="icon solid fa-code">Codeigniter4</li>
-                                <li class="icon solid fa-code">Jquery</li>
-                                <li class="icon solid fa-code">Bootstrap</li>
-                                <li class="icon solid fa-code">Flutter</li>
-                            </ul>
-                            <p>개발 도구</p>
-                            <ul class="feature-icons">
-                                <li class="icon solid fa-bolt">Visual Studio Code</li>
-                                <li class="icon solid fa-bolt">Eclipse</li>
-                                <li class="icon solid fa-bolt">Xcode</li>
-                                <li class="icon solid fa-bolt">Android Studio</li>
-                                <li class="icon solid fa-bolt">DBeaver</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                <!-- Three -->
-                    <section id="three" class="">
-                        <div class="container">
-                            <h3>Portfolio</h3>
-                            <div class="features">
-                                <article>
-                                    
-                                </article>
-                                <article>
-                                    
-                                </article>
-                                
-                            </div>
-                        </div>
-                    </section>
-
-                <!-- Four -->
-                    <section id="four" text-align="center" class="">
-                        <div class="container">
-                            <h3>Contact Me</h3>
-                            <ul class="icons">
-                                <li>Phone : 010 - 4036 - 6666</li><br>
-                                <li>Email : 2jaejo@gmail.com</li><br>
-                                <li>Github : <a href="https://github.com/heonjinPark/">https://github.com/2jaejo</a></li><br>
-                            </ul>
-                        </div>
-                    </section>
-            </div>
-
-        <!-- Footer -->
-            <section id="footer">
-                <div class="container">
-                    <ul class="copyright">
-                        <li>© Untitled. All rights reserved.</li>
-                    </ul>
-                </div>
-            </section>
-
+        <ul>
+            <li class="li_menu" onclick="scrollToSection('section1')"><p>Home</p></li>
+            <li class="li_menu" onclick="scrollToSection('section3')"><p>Experience</p></li>
+            <li class="li_menu" onclick="scrollToSection('section4')"><p>Skills</p></li>
+            <li class="li_menu" onclick="scrollToSection('section5')"><p>Projects</p></li>
+            <li class="li_menu" onclick="scrollToSection('section6')"><p>Contact</p></li>
+        </ul>
     </div>
 
-</body>
+    <!-- 우측 본문 내용 -->
+    <div class="content">
 
+        <section id="section1">
+            <div class="container">
+                <p style="font-size:xx-large;">안녕하세요. 개발자 이재조입니다.</p>
+            </div>
+
+            <div class="container">
+                <h2>About Me</h2>
+                <p>저는 개발이 너무 즐겁습니다.</p>
+                <p>마치 퀴즈의 정답을 맞추듯 즐기면서 개발을 하는중입니다.</p>
+
+                <span>
+                    어릴때부터 컴퓨터를 하는게 좋았습니다. 별다른걸 하지않아도 그냥 컴퓨터를 하고있다는 자체만으로 즐거웠습니다만,
+                    힘든 가정형편에 초등학교 4학년때부터 신문배달을 시작으로 안해본 일이 없을정도로 일만하면서, 꿈보다는 돈을 좇으며 살았습니다.
+                    <br>남들보다 더 늦은만큼 더 열심히 하자는 마음도 있지만, 개발을 하는것 자체가 너무 즐거워 시간가는줄 모르고 일했습니다.
+
+
+                </span>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section id="section3">
+            <div class="container">
+           
+                <h2>Experience</h2>
+
+                <div class="div_exp">
+                    <h3>와인 소믈리에</h3>
+                    <p>2019.06. - 2019.08.</p>
+                    <p> Java 기본에 대해서 수업을 받았습니다. 기본적인 문법을 터득 후 간단한 개인프로젝트를 진행했습니다.</p>
+                </div>
+                
+                <div class="div_exp">
+                    <h3>비전공자 Java 교육</h3>
+                    <p>2019.06. - 2019.08.</p>
+                    <p> Java 기본에 대해서 수업을 받았습니다. 기본적인 문법을 터득 후 간단한 개인프로젝트를 진행했습니다.</p>
+                </div>
+
+                <div class="div_exp">
+                    <h3>(주)뉴론웍스</h3>
+                    <p>2021.04. ~ 2024.03.</p>
+                    <p>재학 중 방학동안 학교에서 진행하는 Java 기본에 대해서 수업을 받았습니다. 기본적인 문법을 터득 후 간단한 개인프로젝트를 진행했습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="section4">
+            <div class="container">
+                <h2>Skills</h2>
+                <div>
+                    <ul>
+                        <li><p>PHP</p></li>
+                        <li><p>Python</p></li>
+                        <li><p>Java</p></li>
+                        <li><p>Kotlin</p></li>
+                        <li><p>Swift</p></li>
+                        <li><p>Html</p></li>
+                        <li><p>Css</p></li>
+                        <li><p>Javascript</p></li>
+                        <li><p>Mysql</p></li>
+                        <li><p>Oracle</p></li>
+                        <li><p>Codeigniter4</p></li>
+                        <li><p>Jquery</p></li>
+                        <li><p>Bootstrap</p></li>
+                        <li><p>Flutter</p></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="section5">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="features">
+                    <article>
+                        
+                    </article>
+                    <article>
+                        
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section6">
+            <div class="container">
+                <h2>Contact</h2>
+                <ul>
+                    <li><p>Phone : 010 - 4036 - 6666</p></li>
+                    <li><p>Email : 2jaejo@gmail.com</p></li>
+                    <li><p>Github : <a href="https://github.com/2jaejo/">https://github.com/2jaejo/</a></p></li>
+                </ul>
+            </div>
+        </section>
+        
+        <hr>
+
+        <footer>
+            <div class="copyright">
+                <p>© 2024. 2jaejo. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
 </html>
+
+
